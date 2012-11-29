@@ -1,0 +1,775 @@
+@charset "Shift_JIS";
+/* Purple - main contents */ 
+/* メインコンテンツ用スタイル */
+
+/* 1999～2000 Piro */
+/* http://piro.sakura.ne.jp/ */
+
+@import url(../system/html.css);
+@import url(../system/system.css);
+@import url(common.css);
+	
+/* Heading Section */ 
+/* 見出し */
+	
+h1 
+{
+	font-weight: normal;
+	background: url(./img/bar00.gif) no-repeat 0 1.8em;
+	font-size: 250%;
+	margin: 0 -8% 1em 0;
+	padding: 1.5em 0 0;
+}
+	
+h1:first-letter 
+{
+	font-size: 300%;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	float: left;
+	width: 1ex;
+	margin-top: -0.5em;
+}
+  
+h2 
+{
+	font-weight: normal;
+	font-size: 2em;
+	margin: 5px -5% 2em 0;
+}
+	
+h2:first-letter, 
+#LatestTopics h3:first-letter
+{
+	font-size: 180%;
+}
+	
+#section-root-content h2:first-letter 
+{
+	font-size: 100%;
+}
+  
+h2 .month 
+{
+	font-size: 120%;
+	text-align: right;
+	display: block;
+	margin: 0 6% -1em 0;
+	position: relative;
+	top: -0.25em;
+}
+  
+h3 
+{
+	border-bottom: solid 1px;
+	margin: 2em 20% 1em 0;
+	font-size: 115%;
+}
+ 
+h4 
+{
+	font-size: medium;
+	margin: 2.5em 0 1em 0;
+	padding-left: 20px;
+	background: url(./img/li01.gif) no-repeat 0 50%;
+}
+ 
+h1 .sub, 
+h2 .sub
+{
+	display: block;
+	padding: 1px 2% 0 0;
+	margin: 0 1em 0 0;
+}
+	
+h1 .sub
+{
+	margin-left: 25%;
+}
+ 
+h2 .sub 
+{
+	border-top-width: 1px;
+}
+ 
+h3 .sub 
+{
+	font-size: 80%;
+}
+   
+/* Contents List Section */ 
+	
+#ContentsList ul, 
+#SSSStyleSelectForm
+{
+	list-style-type: none;
+	list-style-image: none;
+	\6C ist-style-position: inside;
+	_list-style-position: outside;
+}
+ 
+#SSSStyleSelectForm 
+{
+	position: absolute;
+	top: 2.8em;
+	right: 0.5em;
+	width: 23em;
+	z-index: 30;
+	text-align: right;
+}
+	
+#SSSStyleSelectForm 
+{
+	width: 16em;
+}
+  
+#ContentsList 
+{
+	font-size: medium;
+	position: absolute;
+	top: 3.2em;
+	left: 0;
+	letter-spacing: -0.03em;
+	z-index: 20;
+	width: 20%;
+	min-width: 9.2em;
+	margin: 0;
+	padding: 0 0 5em 0;
+/*
+	max-height: 90%;
+	min-height: 80%;
+*/
+	max-height: 90%;
+	min-height: 12em;
+	\70 osition: fixed;
+	\6F verflow: auto;
+	_position: absolute;
+	_overflow: visible;
+}
+	
+#ContentsList :link, 
+#ContentsList :visited,
+#ContentsList .topNavi :link,
+#ContentsList .topNavi :visited
+{
+	text-decoration: none !important;
+}
+ 
+#ContentsList strong 
+{
+	font-size: 110%;
+	text-decoration: underline;
+	border: 0;
+}
+  
+#ContentsList .cont-top 
+{
+	margin: 0 0 -0.2em;
+	padding: 0.1em 0 0.1em 4%;
+	width: 80%;
+	letter-spacing: 0.3em;
+	font-size: 90%;
+}
+ 
+#ContentsList ul 
+{
+	padding: 0;
+	margin: 0;
+	line-height: 80%;
+}
+	
+#ContentsList li 
+{
+	padding: 0 0 0.55em 1ex;
+}
+	
+#ContentsList .cont-main li 
+{
+	font-size: 115%;
+	padding: 0 0 0.8em 1ex;
+}
+ 
+#ContentsList .current 
+{
+	list-style-image: url(./img/li01.gif);
+	padding-bottom: 0.83em;
+	list-style-position: inside;
+}
+  
+#ContentsList .cont-mine 
+{
+	margin-top: 0.7em !important;
+	padding: 0 0 0.5em 0;
+}
+ 
+#ContentsList .cont-main 
+{
+	padding-bottom: 0.5em;
+}
+ 
+#ContentsList .cont-guest 
+{
+	padding-bottom: 0;
+}
+  
+#SbCntLst 
+{
+	position: relative;
+	padding-bottom: 0.3em;
+	margin: 0.5em 0 0.2em 15%;
+}
+	
+#SbCntLst ul 
+{
+	font-size: medium;
+	line-height: 80%;
+	padding-left: 0.5em;
+	letter-spacing: -0.02em;
+	list-style-position: outside;
+}
+ 
+#SbCntLst .cont-outer 
+{
+	margin: 0.3em 0;
+	list-style-image: url(./img/li03.gif);
+}
+ 
+#SbCntLst ul li, 
+.cont-main #SbCntLst ul li
+{
+	font-size: 90%;
+	margin-bottom: -0.22em;
+	padding: 0 0 0.70em 0.5ex;
+}
+	
+#SbCntLst ul .current 
+{
+	list-style-position: inside;
+}
+  
+#SbCntLst ul ul 
+{
+	text-transform: lowercase;
+	font-weight: normal;
+	letter-spacing: 0;
+	padding: 0.25em;
+	margin: auto 0.1em 0.1em 1ex;
+	width: 90%;
+	line-height: 70%;
+	border-width: 0 0 1px 1px;
+}
+   
+/* Main Section */ 
+/* 本文 */
+	
+body 
+{
+	padding-top: 3em;
+}
+ 
+#section-root 
+{
+	margin: 0 1ex 1em 15% !important;
+	padding: 1em 0 !important;
+	border-top-width: 2px;
+}
+ 
+#section-root-content 
+{
+	margin: 0 0 2em 8%;
+	padding: 0 8% 2em 5%;
+}
+	
+#section-root-content p 
+{
+	font-size: 85%;
+}
+ 
+#section-root-content h3, #section-root-content h4 
+{
+	font-size: medium;
+	margin-top: 5px;
+}
+ 
+#section-root-content ul 
+{
+	padding-left: 1.5em;
+}
+	
+#section-root-content ul ul 
+{
+	margin-top: 0.2em;
+	margin-left: 5%;
+}
+  
+#section-root-content .note 
+{
+	padding: 1em;
+	font-size: 90%;
+}
+	
+#section-root-content .note p 
+{
+	font-size: 100%;
+}
+ 
+#section-root-content .note * 
+{
+	margin-left: 1em;
+}
+  
+#section-root-content p, 
+#section-root-content h2,
+#section-root-content ul,
+#section-root-content dl,
+#section-root-content .note
+{
+	margin-left: 22%;
+	clear: none;
+}
+	
+#section-root-content dd p 
+{
+	margin-left: 0;
+}
+  
+#section-root-content>.note, 
+#section-root-children>.note
+{
+	padding: 1em;
+	margin: 1em 10%;
+}
+  
+#section-root-children 
+{
+	margin: 0;
+	padding: 1ex 0;
+}
+	
+.section.topic, 
+.Article,
+.PostArea,
+.DeleteArea
+{
+	padding: 0 12% 3em 6%;
+	margin: 0 0 3.5em 8%;
+}
+  
+dt .sub 
+{
+	margin-left: 1.1em;
+	padding-right: 0.8em;
+}
+ 
+/* body.fw */ 
+	
+.fw #section-root 
+{
+	padding-top: 0;
+	margin-top: -95px !important;
+	z-index: 3 !important;
+}
+   
+/* Function Section */ 
+/* 局所的なクラス */
+	
+address 
+{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	text-align: right;
+	border: 0;
+}
+ 
+.header 
+{
+	font-size: 85%;
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0.2em;
+	left: 0.2em;
+}
+ 
+#sitemap dl a 
+{
+	text-decoration: none;
+}
+  
+/* main-sub */ 
+	
+.main-sub #section-root-content p, 
+.main-sub #section-root-content h2,
+.main-sub #section-root-content h3,
+.main-sub #section-root-content h4,
+.main-sub #section-root-content ul,
+.main-sub #section-root-content dl,
+.main-sub #section-root-content .note
+{
+	margin-left: 10%;
+}
+	
+.main-sub #section-root-content h1 
+{
+	font-size: 220%;
+	margin-bottom: 0.8em;
+	vertical-align: baseline;
+	background-position: 0 1.65em;
+}
+ 
+.main-sub #section-root-content h1:first-letter 
+{
+	font-size: 220%;
+}
+  
+/* Gallery */ 
+	
+.Pictures dt 
+{
+	font-size: 1.1em;
+/*	margin: 2.5em 0 0 0;*/
+	padding: 0.1em;
+	background-image: none;
+	clear: both;
+	border-bottom-width: 1px;
+	list-style-type: none;
+	list-style-image: none;
+}
+	
+.Pictures dt.N-Odd 
+{
+	text-align: left;
+	margin: 2.5em 5% 0 -5%;
+	padding-left: 5%;
+}
+	
+.Pictures dt.N-Odd.new, 
+.Pictures dt.N-Odd.update
+{
+	background-position: left !important;
+}
+  
+.Pictures dt.N-Even 
+{
+	text-align: right;
+	margin: 2.5em -5% 0 5%;
+	padding-right: 5%;
+}
+	
+.Pictures dt.N-Even.new, 
+.Pictures dt.N-Even.update
+{
+	background-position: right !important;
+}
+  
+.Pictures dt a:link, 
+.Pictures dt a:visited
+{
+	text-decoration: none;
+}
+  
+.Pictures dt img 
+{
+	z-index: 30;
+	display: block;
+	margin: -0.5em 0.5em 0.5em 0.5em;
+	clear: none;
+}
+	
+.Pictures dt.N-Odd img 
+{
+	float: right;
+}
+ 
+.Pictures dt.N-Even img 
+{
+	float: left;
+}
+  
+.Pictures dd 
+{
+	/*コメント */
+	font-size: 85%;
+	margin: 0 5%;
+	padding: 0.2em 0.4em 0.3em;
+	clear: none;
+}
+	
+.section.topic dd.data 
+{
+	padding-top: 0.2em;
+}
+	
+.section.topic .N-Odd+dd.data 
+{
+	text-align: right;
+}
+ 
+.section.topic .N-Even+dd.data 
+{
+	text-align: left;
+}
+  
+.Pictures dt.N-Odd+dd, 
+.Pictures dt.N-Odd+dd+dd
+{
+	border-right-width: 1px;
+}
+ 
+.Pictures dt.N-Even+dd, 
+.Pictures dt.N-Even+dd+dd
+{
+	border-left-width: 1px;
+}
+  
+.Pictures dd ul 
+{
+	/*電脳マヴチ リスト */
+	clear: none;
+	font-size: 90%;
+	margin: 0.5em 0 0 1em;
+}
+ 
+.c_marker 
+{
+	font-size: 80%;
+	color: white;
+	background-color: transparent;
+	border-width: 1px;
+}
+  
+/* Links */ 
+	
+.Links dt 
+{
+	margin-top: 1em;
+	margin-right: 8%;
+	border-bottom-width: 1px;
+	font-size: medium;
+}
+	
+.Links dt span 
+{
+	font-size: 90%;
+}
+  
+.Links dd 
+{
+	font-size: 90%;
+	padding: 1px;
+	margin-bottom: 0.2em;
+	position: relative;
+}
+	
+.Links dd.author 
+{
+	font-weight: bold;
+	font-style: italic;
+	left: -1em;
+}
+    
+/* B.B.S. */ 
+	
+.ArticleArea h2, 
+.ControlPageArea h2
+{
+	visibility: hidden !important;
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
+}
+ 
+/* ArticleArea */ 
+	
+.Article h3 
+{
+	font-size: 1.3em;
+	padding: 5px;
+	margin: 5px 5% 0.5em -2%;
+	font-weight: normal;
+	border-bottom-width: 1px;
+}
+	
+.Number 
+{
+	font-size: 80%;
+	font-weight: normal;
+	display: block;
+}
+  
+.Article .Info ul 
+{
+	font-size: 85%;
+	margin: 0 0 1em 1em;
+	text-indent: 0;
+	text-align: left;
+}
+	
+.Article .Info li 
+{
+	display: inline;
+}
+  
+.Article .Body 
+{
+	width: 100%;
+	height: auto;
+	/*overflow: auto;*/
+}
+  
+/* PostArea */ 
+	
+.PostArea table 
+{
+	width: 100%;
+}
+ 
+.PostArea table, 
+.PostArea th,
+.PostArea td
+{
+	border: 0;
+	margin: 0;
+	padding: 0.2em;
+}
+	
+.PostArea th 
+{
+	font-weight: normal;
+	margin: 0.3em 0 0 0;
+}
+  
+.PostArea textarea 
+{
+	width: 100%;
+}
+  
+.ControlPageArea 
+{
+	text-align: center;
+	margin: 0.2em 10%;
+	padding: 3px;
+	font-size: 90%;
+	border-width: 1px;
+}
+	
+.ControlPageArea li 
+{
+	display: inline;
+}
+ 
+.ControlPageArea li:before 
+{
+	content: " / ";
+}
+ 
+.ControlPageArea ul li:first-child:before 
+{
+	content: "";
+}
+  
+.DeleteArea h2 
+{
+	display:none;
+}
+   
+/* Color Setting */ 
+	
+h2 .month 
+{
+	color: #9898BD;
+	background-color: transparent;
+}
+ 
+h1 .sub:first-letter, 
+h2 .sub:first-letter
+{
+	color: #B0B0DD;
+	background-color: transparent;
+}
+ 
+/* HTML Block Elements */ 
+	
+#section-root-content ul 
+{
+	list-style-image: url(./img/li01.gif);
+}
+	
+#section-root-content ul ul 
+{
+	list-style-image: url(./img/li04.gif);
+}
+
+  
+address 
+{
+	background-image: none;
+}
+  
+#ContentsList 
+{
+	background: url(./img/v_bar_cont_02.png)
+		no-repeat 0.7em 100%;
+}
+	
+#ContentsList .cont-top 
+{
+	background: white;
+}
+ 
+#ContentsList .cont-mine, 
+#ContentsList .cont-main,
+#ContentsList .cont-guest
+{
+	background: url(./img/v_bar_cont_01.png)
+		repeat-y 0.7em 0;
+}
+ 
+#ContentsList li 
+{
+	background: url(./img/bar02.gif) no-repeat -17px 0;
+}
+	
+#ContentsList .cont-main li 
+{
+	background: url(./img/bar01.gif) no-repeat -22px 0;
+}
+  
+#SbCntLst ul, 
+#SbCntLst ul ul li,
+.cont-main #SbCntLst ul ul li
+{
+	background-image: none;
+}
+ 
+#SbCntLst ul li, 
+.cont-main #SbCntLst ul li
+{
+	background: url(./img/bar03.gif) no-repeat 0 0.1em;
+}
+ 
+#SbCntLst ul ul 
+{
+	background: url(./img/bg05.gif);
+}
+  
+/* border */ 
+	
+#section-root-content 
+{
+	border-left: 0.13em #D7D5DD solid;
+}
+ 
+.section.topic, 
+.Article,
+.PostArea,
+.DeleteArea
+{
+	border-left: 0.08em #D7D5DD solid;
+}
+   

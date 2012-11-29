@@ -1,0 +1,622 @@
+@charset "Shift_JIS";
+/* Purple - common */ 
+/* ã§í ÉXÉ^ÉCÉã */
+
+/* 1999Å`2000 Piro */
+/* http://piro.sakura.ne.jp/ */
+@namespace url(http://www.w3.org/1999/xhtml);
+	
+/* Common Style */ 
+/* ëSëÃìIÇ»ÉXÉ^ÉCÉã */
+	
+/* Font Setting */ 
+	
+/* 
+h1, h1 *
+{
+	font-family:
+		"Bimini",
+		"Pump Demi Bold LET",
+		"Century Gothic",
+		"Verdana",
+		"ÉqÉâÉMÉmä€ÉS Pro W4",
+		"ÇlÇr ÇoÉSÉVÉbÉN",
+		"ÇlÇr ÉSÉVÉbÉN",
+		"Osaka",
+		sans-serif;
+}
+*/
+ 
+h1,h2,h3,h4,h5,h6, 
+address,
+#ContentsList,
+#ContentsList *,
+#cover h1,
+h2 *
+{
+	font-family:
+		"Century Gothic",
+		"Verdana",
+		"ÉqÉâÉMÉmä€ÉS Pro W4",
+		"ÇlÇr ÇoÉSÉVÉbÉN",
+		"ÇlÇr ÉSÉVÉbÉN",
+		"Osaka",
+		sans-serif;
+}
+ 
+h2 .month 
+{
+	font-family:
+		"Brush Script MT",
+		"CityBlueprint",
+		"Century Gothic",
+		"Miriam Transparent", /* like Century Gothic */
+		"Verdana",
+		sans-serif;
+}
+   
+/* HTML Block Elements */ 
+	
+h1,h2,h3,h4,h5,h6 
+{
+	text-decoration: none;
+	text-align: left;
+	text-indent: 0;
+	font-weight: bold;
+}
+	
+.note h1, .example h1, .column h1, blockquote h1, 
+.note h2, .example h2, .column h2, blockquote h2,
+.note h3, .example h3, .column h3, blockquote h3,
+.note h4, .example h4, .column h4, blockquote h4,
+.note h5, .example h5, .column h5, blockquote h5,
+.note h6, .example h6, .column h6, blockquote h6
+{
+	font-size: large !important;
+	font-weight: bolder !important;
+	padding: 2px !important;
+	margin: 0.5em 2px 0.4em -3% !important;
+	border: none !important;
+	counter-reset: none !important;
+	counter-increment: none !important;
+	background: none !important;
+}
+  
+body 
+{
+	font-size: medium;
+	line-height: 1.3;
+}
+	
+p, ul, ol, dl, address 
+{
+	line-height: 1.35;
+}
+	
+dl p, dl ul, dl ol, dl dl 
+{
+	font-size: 100% !important;
+}
+   
+dt 
+{
+	padding-left: 20px;
+	background: url(./img/li04.gif) no-repeat 0 50%;
+
+	\70 adding-left: 0;
+	\62 ackground-image: none;
+	\64 isplay: list-item;
+	\6C ist-style-image: url(./img/li04.gif);
+}
+ 
+ol,ul 
+{
+	margin: 0 1em 1em 0;
+	padding: 0 0 0 1.5em;
+}
+	
+/*ol 
+{
+	list-style-type: decimal-leading-zero;
+	list-style-image: none;
+}
+*/
+  
+table 
+{
+	border: ridge thin;
+	margin: 1em auto 1em 0;
+	font-size: 90%;
+}
+	
+caption 
+{
+	font-size: medium;
+	font-weight: bold;
+	padding: 1.5em 0 0;
+	margin: 0;
+}
+ 
+td, th 
+{
+	border-width: 1px;
+	font-weight: normal;
+}
+	
+thead th, 
+thoot th
+{
+	font-weight: bold;
+}
+   
+pre 
+{
+	font-size: 90%;
+	width: 100%;
+	margin: 1em;
+}
+ 
+address 
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 75%;
+	text-align: right;
+	margin: 1em 1em 0 60%;
+	padding: 0.5em 0 2em;
+	background: none;
+	border-top: 1px solid;
+}
+  
+/* HTML Inline Elements */ 
+	
+img, 
+:link img,
+:visited img
+{
+	border: 0;
+}
+ 
+input, textarea, select 
+{
+	border-width: 1px;
+}
+  
+/* Classes Lv.1 */ 
+/* ëSëÃÇ≈égÇ§class */
+	
+blockquote, .note, .column, span.column 
+{
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	padding: 1em 0.8em 0.8em 8%;
+	margin: 1em 1em 1em 5%;
+	z-index: 20;
+	background-repeat: no-repeat;
+}
+	
+blockquote:before, .note:before, .column:before 
+{
+	font-size: 4em;
+}
+ 
+blockquote, .note, .column, 
+blockquote>*, .note>*, .column>*
+{
+	font-size: 95%;
+}
+ 
+ul.note, 
+ul.column,
+ul.example,
+ol.note,
+ol.column,
+ol.example
+{
+	padding-left: 2em;
+}
+  
+dl.session dt 
+{
+	font-size: medium;
+	border: 0;
+	padding: 0;
+	background-image: none;
+	list-style-image: none;
+}
+ 
+dt span.sub 
+{
+	font-size: 80%;
+}
+	
+dt span.sub:before 
+{
+	white-space: pre;
+	content: "\A";
+}
+  
+.navi 
+{
+	text-align: right;
+	margin: 1em -1em 1em 0;
+	padding: 5px;
+	text-indent: 0;
+}
+	
+#section-root-content .navi 
+{
+	margin: 0.5em -1em 1.5em 30%;
+	border-top-width: 1px;
+	font-size: 80%;
+}
+	
+#section-root-content .navi ul, 
+#section-root-content .navi li
+{
+	margin: 0;
+	padding: 0 0.2ex;
+	display: inline;
+}
+ 
+#section-root-content .navi .custom 
+{
+	display: block;
+}
+ 
+#section-root-content .navi li:before, 
+#section-root-content .navi ul:before
+{
+	content: "/";
+}
+ 
+.main #section-root-content .navi li:before, 
+.main #section-root-content .navi ul:before,
+#cover #section-root-content .navi li:before,
+#cover #section-root-content .navi ul:before
+{
+	content: "";
+}
+	
+#section-root-content .navi li:first-child:before, 
+#section-root-content .navi .custom li:first-child:before,
+ul.navi li:first-child:before,
+#section-root-content .navi ul:first-child:before
+{
+	content: "";
+}
+     
+/* Classes Lv.2 */ 
+/* ã«èäìIÇ»class */
+	
+.DailyTopic 
+{
+	margin: 1em 0;
+}
+  
+.note:before, blockquote:before 
+{
+	content: "";
+}
+  
+/* Color Setting */ 
+/* îzêFê›íË */
+	
+/* Text Color */ 
+	
+body, 
+address :link,
+address :visited,
+table, caption,
+h2 :link,
+h2 :visited
+{
+	color: #EBEBEF;
+	background-color: transparent;
+}
+ 
+h1,h2,h3,h4,h5,h6, 
+#ContentsList li,
+#ContentsList :link,
+#ContentsList :visited,
+.topNavi li,
+.topNavi :link,
+.topNavi :visited
+{
+	color: #FBFBFF;
+	background-color: transparent;
+}
+	
+#ContentsList .cont-top li, 
+#ContentsList .cont-top :link,
+#ContentsList .cont-top :visited
+{
+	color: black;
+}
+
+  
+.note, 
+.note h2,
+.note h3,
+.note h4,
+.note h5
+{
+	color: #DDCCCC;
+}
+	
+.note:before 
+{
+	color: #874343;
+}
+  
+blockquote, .column, 
+.column h2,
+.column h3,
+.column h4,
+.column h5,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5
+{
+	color: #DFDFEF;
+	background-color: transparent;
+}
+	
+blockquote:before 
+{
+	color: #695D83;
+}
+  
+#SSSStyleSelectForm 
+{
+	color: #C8AEB8;
+	background-color: transparent;
+}
+ 
+.Pictures dd.data 
+{
+	color: #BFBFBF;
+	background-color: transparent;
+}
+ 
+code, samp, var 
+{
+	color: #C8CBD5;
+	background-color: transparent;
+	border-color: #A8ABB5;
+}
+  
+/* Border */ 
+	
+h3, #section-root-content .navi, dt, table 
+{
+	border-color: #B9AED0;
+}
+ 
+h4, h1 .sub, 
+dt .sub, dd,
+fieldset,
+.ControlPageArea, #SSSStyleSelectForm,
+td
+{
+	border-color: #987E98;
+}
+ 
+.Pictures dd 
+{
+	border-color: #BFBFBF;
+}
+ 
+address 
+{
+	border-color: #8D849E;
+}
+  
+/* Background */ 
+	
+body 
+{
+	background: #210021 url(./img/bg_base.jpg) no-repeat;
+}
+	
+@media all { body 
+{
+	background-attachment: fixed;
+}
+
+}
+  
+#section-root 
+{
+	border-color: #41355B;
+	background: #41355B url(./img/bg01.jpg);
+}
+	
+#section-root #section-root-content, 
+#section-root #section-root-children
+{
+	background: url(./img/bg01_2.jpg) repeat-y 100% 0;
+}
+  
+blockquote 
+{
+	border-color: #7799FF;
+	background-image: url(./img/r-triangle033.png)
+}
+ 
+.note 
+{
+	border-color: #EE5555;
+	background-image: url(./img/r-triangle023.png)
+}
+ 
+.column 
+{
+	border-color: #8888AA;
+	background-image: url(./img/r-triangle013.png)
+}
+ 
+.example, pre 
+{
+	background: url(./img/sample-bg.png) no-repeat right top;
+}
+	
+.example pre, 
+.example .example
+{
+	background: none;
+}
+   
+/* emphasis */ 
+	
+em, strong, dfn 
+{
+	color: #FBFBFF;
+	background-color: transparent;
+	letter-spacing: 0;
+}
+	
+em em, em strong, em dfn, 
+strong strong, strong em, strong dfn,
+dfn em, dfn strong, dfn dfn
+{
+	color: #88FFFF;
+	background-color: transparent;
+}
+  
+th 
+{
+	border-color: #FF8888;
+	background-image: url(./img/bg02.gif);
+}
+ 
+em.on 
+{
+	color: #66FFFF;
+	background-color: transparent;
+}
+ 
+em.off 
+{
+	color: #66FF66;
+	background-color: transparent;
+}
+  
+/* HTML Block Elements */ 
+	
+ul, 
+ul ul ul,
+dl ul ul,
+dl ul ul ul ul
+{
+	list-style-image: url(./img/li03.gif);
+}
+	
+ul ul, 
+ul ul ul ul,
+dl ul,
+dl ul ul ul
+{
+	list-style-image: url(./img/li04.gif);
+}
+   
+/* HTML Inline Elements */ 
+	
+:link, 
+.navi :visited,
+:link *
+{
+	color: #C4C4F8;
+	background-color: transparent;
+}
+	
+:visited, 
+:visited *
+{
+	color: #A8A8DD;
+	background-color: transparent;
+}
+ 
+a:active, a:hover, a:focus, 
+a:active *, a:hover *, a:focus *,
+#SSSStyleSelectForm option:active,
+#SSSStyleSelectForm option:hover,
+#SSSStyleSelectForm option:focus
+{
+	text-decoration: underline !important;
+	color: black !important;
+	background-color: #DFCFEF !important;
+}
+  
+legend 
+{
+	color: #B3B3C7;
+}
+ 
+del, ins:before, 
+abbr:after,
+acronym:after,
+blockquote:after
+{
+	color: #DDDDDD;
+	background-color: transparent;
+}
+  
+/* ClassesÅEIDs */ 
+	
+pre, .example/*, samp, code*/ 
+{
+	border-color: #FF6666;
+}
+ 
+.status, .ArticleInfo 
+{
+	color: #BFBFBF;
+	background-color: transparent;
+	border-color: #BFBFBF;
+}
+ 
+.navi 
+{
+	background: url(./img/line_02.gif) no-repeat 100% 1.1em;
+}
+	
+#section-root-content .navi 
+{
+	background: none;
+}
+  
+#SSSStyleSelectForm, 
+#SSSStyleSelectForm *
+{
+	margin: 0;
+}
+	
+#SSSStyleSelectForm 
+{
+	font-size: 75%;
+}
+
+ 
+#SSSStyleSelectForm, 
+#SSSStyleSelectForm *
+{
+	color: #EBEBEF;
+	background-color: transparent;
+}
+ 
+#SSSStyleSelectForm select, 
+#SSSStyleSelectForm option
+{
+	background: #210021;
+}
+ 
+textarea, input, select, input[type=checkbox], 
+#SSSStyleSelectForm input
+{
+	background: #B3B3C7 url(./img/input.jpg);
+	border-color: #80819A;
+	color: black;
+}
+    

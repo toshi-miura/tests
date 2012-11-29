@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* ---------------------
+ * FONTSIZE MODEL * 
+ * ---------------------
+ *  63% ->	10pxに相当
+ *  70% ->	11pxに相当
+ *  75% ->	12pxに相当
+ *  82% ->	13pxに相当
+ *  88% ->	14pxに相当
+ *  94% ->	15pxに相当
+ * 100% ->	16pxに相当
+ * 107% ->	17pxに相当
+ * 113% ->	18pxに相当
+ * 119% ->	19pxに相当
+ * 125% ->	20pxに相当
+ * --------------------- */
+
+
+/* ========BASIC======== */
+html {
+   overflow-y:scroll;
+}
+
+body {
+   margin:0;
+   padding:0;
+   line-height:1.6;
+   letter-spacing:1px;
+   font-family:Verdana, Helvetica, sans-serif;
+   font-size:13px;
+   color:#fff;
+   background:#000;
+}
+
+br {
+   letter-spacing:normal;
+}
+
+a {
+   color:#333;
+   text-decoration:none;
+}
+
+a:hover {
+   color:#666;
+}
+
+img {
+   border:0;
+   vertical-align:bottom;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin:0;
+}
+
+/* ========TEMPLATE LAYOUT======== */
+#top {
+   width:780px;
+   margin:0 auto;
+}
+
+#contents {
+   float:left;
+   width:780px;
+}
+
+#side {
+   float:left;
+   width:220px;
+   background:#181818;
+   padding:10px 0;
+}
+
+#main {
+   float:right;
+   width:540px;
+   padding:10px 0;
+}
+
+
+/* ========SIDE CUSTOMIZE======== */
+#side h1 {
+   margin:0;
+   font-size:24px;
+}
+
+#side h1 a {
+   color:#fff;
+}
+
+#side h1 a:hover {
+   color:#ddd;
+}
+
+#side div.section {
+   margin:0 10px;
+}
+
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+   margin:0 auto;
+   padding:10px 0;
+}
+
+#menu li {
+   color:#333;
+   text-align:center;
+   list-style-type:none;
+}
+
+#menu li a {
+   display:block;
+   width:220px;
+   color:#f1f1f1;
+   line-height:60px;
+}
+
+#menu li a:hover {
+   color:#f1f1f1;
+   background:#2D2D2D url("../images/bg_menu.gif") 0 0 repeat;
+}
+
+
+/* ========MAIN CONTENTS CUSTOMIZE======== */
+#main #pr p {
+   margin:0;
+   padding:5px 0;
+}
+
+#main #icatch {
+   margin-bottom:10px;
+}
+
+#main a {
+   color:#D1D1D1;
+}
+
+#main a:hover {
+   color:#f1f1f1;
+   text-decoration:underline;
+}
+
+#main h2 {
+   margin-bottom:8px;
+   padding:0 0 0 10px;
+   font-size:15px;
+   font-weight:bold;
+   line-height:35px;
+   border:1px solid #3E3E3E;
+   background:#181818;
+}
+
+#main h3 {
+   clear:both;
+   margin:20px 0 8px 0;
+   padding:0 0 0 5px;
+   font-size:14px;
+   border-left:5px solid #3E3E3E;
+}
+
+#main h4 {
+   margin-bottom:2px;
+   font-size:14px;
+   border-bottom:2px solid #f1f1f1;
+}
+
+#main h5 {
+   margin-bottom:2px;
+   padding:2px 5px;
+   font-size:13px;
+   background:#3E3E3E;
+}
+
+#main h6 {
+   margin-bottom:2px;
+   font-size:13px;
+   border-bottom:2px solid #3E3E3E;
+}
+
+#main p {
+   margin:0 0 1em 0;
+}
+
+#main dt {
+   margin-bottom:3px;
+}
+
+#main dd {
+   padding:0;
+   margin:0 0 0.5em 1em;
+   padding:3px;
+   color:#ddd;
+   background:#181818;
+}
+
+/* INFORMATION CUSTOMIZE */
+* html body #main dl.information dd div {
+   display:inline-block;
+}
+
+#main dl.information dt {
+   float:left;
+   width:10em;
+   margin:0;
+   padding:0;
+   color:#fff;
+}
+
+#main dl.information dd {
+   margin:0 0 0.5em 10em;
+   padding:0;
+   color:#fff;
+   background:transparent;
+}
+
+#main table {
+   width:100%;
+   border-collapse: collapse;
+}
+
+#main table th {
+   padding:5px;
+   font-size:12px;
+   text-align:left;
+   border:1px solid #ddd;
+   background:#181818;
+}
+
+#main table td {
+   padding:5px;
+   font-size:12px;
+   text-align:left;
+   border:1px solid #ddd;
+}
+
+
+/* ========PAGETOP CUSTOMIZE========= */
+#pageTop {
+   padding:10px 0;
+   text-align:right;
+   font-size:11px;
+}
+
+#pageTop a{
+   padding:0 0 0 12px;
+   background:url("../images/bg_pagetop.gif") 0 60% no-repeat;
+}
+
+
+
+/* ========FOOTMENU CUSTOMIZE======== */
+#footMenu ul {
+   margin:0;
+   padding:10px 0 0 0;
+   text-align:right;
+   border-top:1px solid #B4B4B4;
+}
+
+#footMenu li {
+   display:inline;
+   margin:0 0 0 10px;
+   list-style:none;
+}
+
+#footMenu li a {
+   padding-left:10px;
+   background: url("../images/bg_footmenu.gif") 0 50% no-repeat;
+}
+
+
+/* ========FOOTER CUSTOMIZE======== */
+.copyright {
+   padding:10px 0;
+   font-size:11px;
+   color:#B4B4B4;
+   font-style:normal;
+   text-align:center;
+}
+
+
+/* ========SAMPLEPAGE CUSTOMIZE======== */
+div.menulist img {
+   float:left;
+   margin:0 10px 10px 0;
+   padding:5px;
+   background:#181C18;
+}
+
+div.menulist p.price {
+   text-align:right;
+   color:#D98F00;
+   font-weight:bold;
+}

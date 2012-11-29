@@ -1,0 +1,40 @@
+<html xmlns:ng="http://angularjs.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet"  href="../css/p/common.css" type="text/css" rel="stylesheet" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"
+	ng:autobind></script>
+<script src="array3.js"></script>
+</head>
+<body ng-app>
+	<a href="http://blog.livedoor.jp/kotesaki/archives/1738808.html">ref</a>
+	<hr>
+	<div ng-controller="controller">
+		Search: <input type="text" name="query">
+		<hr />
+		<form ng:submit="set()">
+			name:<input type="text" ng-model="name"><br> age:<input
+				type="text" ng-model="age"><br> <input type="submit"
+				value="add">
+		</form>
+		<hr>
+		動作していない
+		<table ng:repeat="person in persons$filter(query)">
+			<tr>
+				<td>{{person.name}}</td>
+				<td>{{person.age}}</td>
+			</tr>
+		</table>
+		<hr>
+		<table ng:repeat="person in persons">
+			<tr>
+				<td>{{person.name}}</td>
+				<td>{{person.age}}</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

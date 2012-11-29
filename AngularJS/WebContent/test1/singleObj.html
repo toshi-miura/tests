@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+<title>Insert title here</title>
+</head>
+
+<body ng-app>
+	<a href="http://tech.naver.jp/blog/?p=2259">参考文書</a>	<hr>
+
+	<div ng-controller="helloCtrl">
+		<span>{{hello}}</span>
+	</div>
+	<hr>
+	<div ng-controller="helloCtrl2">
+		<input type="text" ng-model="hello"> hellow:<span>{{hello}}</span>
+		count:<span>{{count}}</span>
+		<button ng-click="goodbye()">Good Byeに変更</button>
+	</div>
+</body>
+<script>
+	var count = 0;
+	function helloCtrl($scope) {
+		$scope.hello = "Hello, World";
+		$scope.hello = "Hello, World";
+		$scope.hello = "Hello, World";
+		$scope.goodbye = function() {
+			$scope.hello = "Good Bye";
+		}
+	}
+	function helloCtrl2($scope) {
+		$scope.hello = "Hello, World";
+		$scope.hello = "Hello, World";
+		$scope.hello = "Hello, World";
+		$scope.count = count;
+		$scope.goodbye = function() {
+			$scope.hello = "Good Bye";
+			count = parseInt(count) + 1;
+			$scope.count = count;
+		}
+
+	}
+</script>
+
+
+
+
+</html>

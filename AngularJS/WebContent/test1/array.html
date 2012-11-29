@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"
+	ng:autobind></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body ng-app>
+	<a href="http://blog.livedoor.jp/kotesaki/archives/1738808.html">参考文書</a>
+	<hr>
+	<div ng-controller="controller">
+		<button ng-click="increment()">Good Byeに変更</button>
+		<table ng:repeat="person in persons">
+			<tr>
+				<td>{{person.name}}</td>
+				<td>{{person.age}}</td>
+			</tr>
+		</table>
+
+		<hr>
+		<form ng:submit="set()">
+			name:<input type="text" name="name"><br> age:<input
+				type="text" name="age"><br> <input type="submit"
+				value="add">
+		</form>
+	</div>
+
+
+
+	<script>
+		var datas = [ {
+			'name' : 'ken',
+			'age' : 39
+		}, {
+			'name' : 'yu',
+			'age' : 4
+		}, {
+			'name' : 'ou',
+			'age' : 7
+		}, {
+			'name' : 'ou',
+			'age' : 7
+		} ];
+
+		var no = 100;
+		var self = this;
+		var controller = function($scope) {
+
+			$scope.persons = datas;
+
+			$scope.increment = function() {
+
+				no = no + 1;
+				datas.push({
+					'name' : 'increment_' + no,
+					'age' : no
+				});
+			};
+
+			$scope.set = function() {
+
+				console.log($scope);
+				console.log(self);
+				datas.push({
+					'name' : self.name,
+					'age' : self.age
+				});
+				self.name = self.age = '';
+			}
+		};
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,562 @@
+@charset "Shift_JIS";
+/* Purple - Top */ 
+/* ÉgÉbÉvópÉXÉ^ÉCÉã */
+
+/* 1999Å`2000 Piro */
+/* http://piro.sakura.ne.jp/ */
+
+@import url(../system/html.css);
+@import url(../system/system.css);
+@import url(common.css);
+	
+/* cover Section */ 
+	
+body 
+{
+	padding: 630px 5% 0 5%;
+}
+	
+p 
+{
+	text-indent: 0;
+	margin: 0;
+	padding: 0;
+}
+  
+#section-root-content 
+{
+	position: absolute;
+	top: 30px;
+	left: 8%;
+}
+	
+@media all { #section-root-content 
+{
+	position: static;
+}
+
+}
+  
+h1 
+{
+	width: 500px;
+	height: 500px;
+	font-size: small;
+	font-weight: normal;
+	margin: 0;
+	padding: 2px 0 490px 25px;
+}
+	
+@media all { h1 
+{
+	padding-bottom: 0;
+	padding-left: 10%;
+	position: absolute;
+	top: 2em;
+	left: 8%;
+	width: 100%;
+
+	\77 idth: 95%;
+	\6c eft: 0;
+}
+
+}
+ 
+h1, h1 * 
+{
+	font-family:
+		"Century Gothic",
+		"Verdana",
+		"ÉqÉâÉMÉmä€ÉS Pro W4",
+		"ÇlÇr ÇoÉSÉVÉbÉN",
+		"ÇlÇr ÉSÉVÉbÉN",
+		"Osaka",
+		sans-serif !important;
+}
+ 
+h1 .sub 
+{
+	display: none;
+}
+ 
+h1 .title-main:after 
+{
+	content: "\", a nest of a failure." !important;
+}
+  
+#contents-content, 
+#cover #about h2
+{
+	display: none;
+}
+ 
+#contents-children 
+{
+	position: absolute;
+	top: 13.5em;
+	left: 50%;
+	width: 45%;
+	z-index: 200;
+}
+	
+#ContentsList 
+{
+	font-size: medium;
+}
+	
+#ContentsList .operation, #ContentsList kbd 
+{
+	font-size: 70% !important;
+}
+ 
+#ContentsList h3 
+{
+	border-bottom-width: 1px;
+	font-size: 110%;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0 5% 1.3em 35%;
+}
+ 
+#ContentsList ul 
+{
+	margin: 0 0 0.5em 0;
+	padding: 0 0 0 1em;
+	font-size: 120%;;
+	line-height: 110%;
+}
+	
+#ContentsList li 
+{
+	margin: 0 0 -0.13em 0;
+	padding: 0 0 0.2em 0.5ex;
+	min-height: 22px;
+	list-style-type: none;
+	list-style-image: none;
+}
+ 
+#ContentsList ul.cont-main 
+{
+	font-size: 130%;
+}
+	
+#ContentsList ul.cont-main li 
+{
+	border-bottom-width: 1px;
+	list-style-image: url(./img/li03.gif);
+	min-height: 26px;
+}
+  
+/* position */ 
+	
+#cover li#m-entrance 
+{
+	margin-left: 39%;
+}
+ 
+#cover li#m-latest 
+{
+	margin-left: 37%;
+}
+ 
+#cover li#m-pics 
+{
+	margin-left: 28%;
+	margin-right: 16%;
+}
+ 
+#cover li#m-xul 
+{
+	margin-left: 24%;
+	margin-right: 22%;
+}
+ 
+#cover li#m-w3cg 
+{
+	margin-left: 16%;
+	margin-right: 27%;
+}
+ 
+#cover li#m-bbs 
+{
+	margin-left: 10%;
+}
+ 
+#cover li#m-links 
+{
+	margin-left: 0;
+}
+   
+#ContentsList a:link, 
+#ContentsList a:visited
+{
+	text-decoration: none;
+}
+  
+#PickUp 
+{
+	padding: 0;
+	margin: 1.5em 5% 0 30%;
+}
+	
+#PickUp h3 
+{
+	text-transform: none;
+	font-size: 82%;
+	margin: 0 30% 0 0;
+	padding-top: 0;
+	border-bottom: 1px solid;
+}
+ 
+#PickUp ul 
+{
+	padding: 2px 0 10px 10px;
+	margin: 0.5em 0 0 0.5em;
+	font-size: 72%;
+	line-height: 1.2;
+}
+	
+#PickUp ul li 
+{
+	margin-bottom: 2px;
+}
+ 
+#PickUp ul ul 
+{
+	padding: 0.2em;
+	margin: 0.2em 0.2em 0.2em 2em;
+	font-size: smaller;
+}
+   
+#Appendix 
+{
+	margin: 0.5em 5% 0 30%;
+}
+	
+#Appendix h3 
+{
+	font-size: 80%;
+	margin: 0 30% 0.5em 0;
+	padding: 0;
+	border-bottom-width: 1px;
+}
+ 
+#Appendix ul 
+{
+	line-height: 1;
+	padding: 2px 0 10px 10px;
+	margin: 0.5em 0 0 0.5em;
+}
+ 
+#Appendix a:link, 
+#Appendix a:visited
+{
+	font-size: 70%;
+	text-decoration: none;
+}
+   
+#UpDate 
+{
+	z-index: 150;
+	position: absolute;
+	top: 10px;
+	left: 65%;
+	padding: 0;
+	margin: 0;
+	width: 33%;
+	height: 200px;
+/*	overflow: auto; */
+}
+	
+#UpDate h2 
+{
+	font-size: 85%;
+	margin: 0 30% 0.2em 0;
+}
+	
+#UpDate h2 .sub 
+{
+	display: block;
+	font-size: 85%;
+	font-weight: normal;
+	margin: 0 10% 0 0;
+	padding-top: 1px;
+	border-top-width: 1px;
+}
+  
+#UpDate ul 
+{
+	font-size: 80%;
+	padding: 2px 0 0 1em;
+	margin: 0.5em 0 1em 0.5em;
+}
+	
+#UpDate .history 
+{
+	text-indent: 0;
+	padding: 0;
+	font-size: smaller;
+	margin: 0.5em 10% 0.2em 0;
+	text-align: right;
+}
+ 
+#UpDate .history:before 
+{
+	content: "[ ";
+}
+ 
+#UpDate .history:after 
+{
+	content: " ]";
+}
+   
+#info 
+{
+	z-index: 110;
+	position: absolute;
+	top: 34em;
+	left: 3%;
+	width: 40%;
+	font-size: 75%;
+	margin: 0 0 0 3%;
+	padding: 0;
+}
+	
+#info ul 
+{
+	list-style-type: square;
+}
+ 
+#info img 
+{
+	height: 1.2em;
+	width: 6.5em;
+}
+  
+#message 
+{
+	z-index: 120;
+	position: absolute;
+	top: 43em;
+	left: 3%;
+	padding: 0.4em 0.5em 0.5em 0.5em;
+	width: 45%;
+	font-size: 75%;
+}
+	
+#message h2 
+{
+	font-size: 110%;
+	padding: 2px;
+	margin: 0 45% 0 -0.5em;
+	border-width: 0 0 1px 0;
+}
+ 
+#message p, 
+#message ul,
+#message ol
+{
+	font-size: 100%;
+	margin: 0.5em 0;
+}
+ 
+#message blockquote:before, 
+#message blockquote:after
+{
+	content: "";
+}
+ 
+#message blockquote 
+{
+	background: none;
+	margin: 0;
+	padding: 0.2em;
+}
+  
+#siteinfo 
+{
+	text-align: left;
+	font-size: 90%;
+	margin: 1em 50% 1em -2%;
+	padding-top: 5em;
+}
+	
+#banners 
+{
+	width: 200px;
+}
+	
+#banners a 
+{
+	display: block;
+	margin-right: auto;
+}
+  
+#siteinfo p 
+{
+	margin: 0 0 1em 0;
+	padding: 0;
+	text-indent: 0;
+}
+ 
+#siteinfo .note 
+{
+	margin: 0;
+	border: 0 none;
+}
+ 
+#moreinfo 
+{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 150%;
+	text-align: center;
+}
+  
+#SSSStyleSelectForm 
+{
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+	
+/*
+#KeyChk, #SmlChk 
+{
+	display: inline;
+	padding-right: 0.5em;
+}
+*/
+  
+address 
+{
+	margin-right: 0;
+}
+  
+/* Function Section */ 
+	
+.navi 
+{
+	margin: 0;
+}
+   
+/* Color Setting */ 
+	
+/* text */ 
+	
+a:link, a:visited 
+{
+	color: #FBFBFF;
+	background-color: transparent;
+}
+ 
+#UpDate .history, 
+#UpDate .history a:link,
+#UpDate .history a:visited
+{
+	color: #BFBFBF;
+	background-color: transparent;
+}
+ 
+h1, #info, #info *, 
+#PickUp, #PickUp *,
+#Appendix, #Appendix *
+{
+	color: #E4E1F2;
+	background-color: transparent;
+	border-color: #E4E1F2;
+}
+ 
+#Appendix, 
+#Appendix *,
+#Appendix a:link,
+#Appendix a:visited {
+	color: #BEB8CD;
+	background-color: transparent;
+}
+ 
+#info, 
+#info *,
+#info a:link,
+#info a:visited,
+#message,
+#message *,
+#message a:link,
+#message a:visited {
+	color: #D0CADC;
+	background-color: transparent;
+}
+  
+/* background */ 
+	
+body 
+{
+	background-attachment: fixed;
+}
+ 
+#section-root, #section-root #section-root-children, #section-root #section-root-content 
+{
+	background: transparent none;
+}
+ 
+h1 
+{
+	background: url(./img/_top.gif) no-repeat 45% 50%;
+}
+ 
+/* contents list */ 
+	
+#ContentsList li 
+{
+	background: url(./img/bar04.gif)
+		no-repeat left bottom;
+}
+ 
+#ContentsList .cont-main li 
+{
+	background: url(./img/bar02.gif)
+		no-repeat left bottom;
+	border-color: #987E98;
+}
+    
+/* opacity */ 
+/* 44, 52, 65, 73, 81, 88,95 */
+	
+#banner1, #banner2, #banner3 
+{
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+	
+#banner1:hover, 
+#banner2:hover,
+#banner3:hover
+{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+   
+/* Easy Popup */ 
+/*
+Original:
+http://www.meyerweb.com/eric/css/edge/popups/demo.html
+*/
+	
+a:link .description, 
+a:visited .description
+{
+	display: none;
+}
+ 
+a:hover .description 
+{
+	display: block;
+	position: absolute;
+	top: 1.2em;
+	right: 15%;
+	background: transparent !important;
+	color: #FBFBFF !important;
+	text-decoration: none !important;
+	font-size: small;
+}
+  
